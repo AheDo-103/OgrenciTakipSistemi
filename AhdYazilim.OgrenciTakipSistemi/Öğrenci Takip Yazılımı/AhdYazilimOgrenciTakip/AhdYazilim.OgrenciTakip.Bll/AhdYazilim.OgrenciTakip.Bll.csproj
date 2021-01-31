@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25781DF9-B831-4C49-9850-E4C223DFC6E8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AhdYazilim.OgrenciTakip.Bll</RootNamespace>
+    <AssemblyName>AhdYazilim.OgrenciTakip.Bll</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseBll.cs" />
+    <Compile Include="Base\BaseGenelBll.cs" />
+    <Compile Include="Base\BaseHareketBll.cs" />
+    <Compile Include="Functions\Converts.cs" />
+    <Compile Include="Functions\Crypto.cs" />
+    <Compile Include="Functions\GeneralFunctions.cs" />
+    <Compile Include="Functions\ValidationFunctions.cs" />
+    <Compile Include="General\AileBilgiBll.cs" />
+    <Compile Include="General\AileBilgileriBll.cs" />
+    <Compile Include="General\AvukatBll.cs" />
+    <Compile Include="General\BankaBll.cs" />
+    <Compile Include="General\BankaHesapBll.cs" />
+    <Compile Include="General\BankaSubeBll.cs" />
+    <Compile Include="General\BelgeHareketleriBll.cs" />
+    <Compile Include="General\BelgeSecimBll.cs" />
+    <Compile Include="General\BilgiNotlariBll.cs" />
+    <Compile Include="General\CariBll.cs" />
+    <Compile Include="General\EposBilgileriBll.cs" />
+    <Compile Include="General\EvrakBilgileriBll.cs" />
+    <Compile Include="General\EvrakBll.cs" />
+    <Compile Include="General\FiltreBll.cs" />
+    <Compile Include="General\GeriOdemeBilgileriBll.cs" />
+    <Compile Include="General\GorevBll.cs" />
+    <Compile Include="General\HizmetBilgileriBll.cs" />
+    <Compile Include="General\HizmetBll.cs" />
+    <Compile Include="General\HizmetTuruBll.cs" />
+    <Compile Include="General\IlBll.cs" />
+    <Compile Include="General\IlceBll.cs" />
+    <Compile Include="General\IletisimBilgileriBll.cs" />
+    <Compile Include="General\IletisimBll.cs" />
+    <Compile Include="General\IndirimBilgileriBll.cs" />
+    <Compile Include="General\IndirimBll.cs" />
+    <Compile Include="General\IndiriminUygulanacagiHizmetBilgileriBll.cs" />
+    <Compile Include="General\IndirimTuruBll.cs" />
+    <Compile Include="General\IptalNedeniBll.cs" />
+    <Compile Include="General\IsyeriBll.cs" />
+    <Compile Include="General\KardesBilgileriBll.cs" />
+    <Compile Include="General\KasaBll.cs" />
+    <Compile Include="General\KontenjanBll.cs" />
+    <Compile Include="General\MakbuzBll.cs" />
+    <Compile Include="General\MakbuzHareketleriBll.cs" />
+    <Compile Include="General\MeslekBll.cs" />
+    <Compile Include="General\OdemeBilgileriBll.cs" />
+    <Compile Include="General\OdemeTuruBll.cs" />
+    <Compile Include="General\OgrenciBll.cs" />
+    <Compile Include="General\OkulBll.cs" />
+    <Compile Include="General\OzelKodBll.cs" />
+    <Compile Include="General\PromosyonBilgileriBll.cs" />
+    <Compile Include="General\PromosyonBll.cs" />
+    <Compile Include="General\RaporBll.cs" />
+    <Compile Include="General\RehberBll.cs" />
+    <Compile Include="General\ServisBll.cs" />
+    <Compile Include="General\SinavBilgileriBll.cs" />
+    <Compile Include="General\SinifBll.cs" />
+    <Compile Include="General\SinifGrupBll.cs" />
+    <Compile Include="General\SubeBll.cs" />
+    <Compile Include="General\TahakkukBll.cs" />
+    <Compile Include="General\TevsikBll.cs" />
+    <Compile Include="General\YabanciDilBll.cs" />
+    <Compile Include="General\YakinlikBll.cs" />
+    <Compile Include="Interfaces\IBaseBll.cs" />
+    <Compile Include="Interfaces\IBaseCommonBll.cs" />
+    <Compile Include="Interfaces\IBaseGenelBll.cs" />
+    <Compile Include="Interfaces\IBaseHareketGenelBll.cs" />
+    <Compile Include="Interfaces\IBaseHareketSelectBll.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AhdYazilim.Dal\AhdYazilim.Dal.csproj">
+      <Project>{0260a630-556f-4d2f-b028-65de056103f6}</Project>
+      <Name>AhdYazilim.Dal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AhdYazilim.OgrenciTakip.Common\AhdYazilim.OgrenciTakip.Common.csproj">
+      <Project>{DE09FF51-1747-4D14-9E07-6FF8D0F3673B}</Project>
+      <Name>AhdYazilim.OgrenciTakip.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AhdYazilim.OgrenciTakip.Data\AhdYazilim.OgrenciTakip.Data.csproj">
+      <Project>{8F2C7D7B-E778-4B91-B94A-20629A20E02A}</Project>
+      <Name>AhdYazilim.OgrenciTakip.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AhdYazilim.OgrenciTakip.Model\AhdYazilim.OgrenciTakip.Model.csproj">
+      <Project>{4F35F1AC-1928-4DD5-B6FA-A5EA5B8104CC}</Project>
+      <Name>AhdYazilim.OgrenciTakip.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
